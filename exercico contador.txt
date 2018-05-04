@@ -1,0 +1,73 @@
+jogo um
+
+
+let vogais = ["a","e","i","o","u"];
+let contadorConsoantes = 0;
+let contadorVogais = 0;
+
+let entrada = document.querySelector("body input");
+
+function clicar(){
+    verificar(entrada.value);
+}
+
+// professor: não tinha a funcção a cima e era do seguinte jeito
+// botao.onclick = function(){
+    // let palavra = inputPalavra.value.toLowerCase();
+    // let numVogais = 0;
+// } to lower case é para considerar as letras maiusculas
+
+function verificar(valorDeEntrada){
+    for(let letra of valorDeEntrada){
+        for(let vogal of vogais){
+            // console.log("+letra","+vogais");
+            if(letra == vogal){
+                // a linha de cima tem tres igua para comparação
+                contadorVogais++;
+                // console.log("vogais");
+                break;
+            }
+        }
+    }
+
+    let consoante = valorDeEntrada.length - contadorVogais;
+    console.log(consoante);
+    
+    if(consoante > contadorVogais){
+        alert("Marcos ganhou");
+    }else{
+        alert("Ana ganhou");
+    }
+}
+
+
+jogo 3
+
+
+ if(consoante > contadorVogais){
+        alert("Marcos ganhou");
+    }else if(consoante < contadorVogais){
+        alert("Ana ganhou");
+    } else{
+        alert("Mariana ganhou")
+}
+
+jogo 2
+
+html.
+irno html e jogar mais um imput pedindo para colocar uma primeira palavra
+colocar um id em cada um
+js.
+let entrada = document.querySelector("#palavra1");
+let entrada = document.querySelector("#palavra2");
+
+
+// botao.onclick = function(){
+    // let palavra1 = inputPalavra1.value.toLowerCase();
+    // let palavra2 = inputPalavra2.value.toLowerCase();
+    // let palavra = palavra1 + palavra2
+    // let numVogais = 0;
+// }
+
+jogo 4
+
